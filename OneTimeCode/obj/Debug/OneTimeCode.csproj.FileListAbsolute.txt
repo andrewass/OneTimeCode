@@ -1,0 +1,9 @@
+C:\Users\andreas\Documents\VisualStudio_Projects\OneTimeCode\OneTimeCode\bin\OneTimeCode.dll.config
+C:\Users\andreas\Documents\VisualStudio_Projects\OneTimeCode\OneTimeCode\bin\OneTimeCode.dll
+C:\Users\andreas\Documents\VisualStudio_Projects\OneTimeCode\OneTimeCode\bin\OneTimeCode.pdb
+C:\Users\andreas\Documents\VisualStudio_Projects\OneTimeCode\OneTimeCode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\andreas\Documents\VisualStudio_Projects\OneTimeCode\OneTimeCode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\andreas\Documents\VisualStudio_Projects\OneTimeCode\OneTimeCode\obj\Debug\OneTimeCode.csprojResolveAssemblyReference.cache
+C:\Users\andreas\Documents\VisualStudio_Projects\OneTimeCode\OneTimeCode\obj\Debug\OneTimeCode.csproj.CoreCompileInputs.cache
+C:\Users\andreas\Documents\VisualStudio_Projects\OneTimeCode\OneTimeCode\obj\Debug\OneTimeCode.dll
+C:\Users\andreas\Documents\VisualStudio_Projects\OneTimeCode\OneTimeCode\obj\Debug\OneTimeCode.pdb
