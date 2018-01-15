@@ -7,10 +7,9 @@ namespace OneTimeCode {
     public partial class SignIn : Page {
 
         private string connectionString = "Server=localhost\\SQLEXPRESS;Database=Randombase;Trusted_Connection=True";
-        private SqlConnection connection;
 
         protected void Page_Load(object sender, EventArgs e) {
-            connection = new SqlConnection(connectionString);
+           
         }
 
         /* When user submits name and phone number, an access code is generated, 
@@ -28,12 +27,14 @@ namespace OneTimeCode {
             string queryString = "insert into WiFiAccess "+
                 "(Firstname, Lastname, Phonenumber, Accesscode, Activated) " +
                 "values (@firstname, @lastname, @phonenumber, "+accessCode+", 0)";
-            connection.Open();
-            SqlCommand command = new SqlCommand(queryString, connection);
-            command.Parameters.AddWithValue("@firstname", firstName.Text);
-            command.Parameters.AddWithValue("@lastname", lastName.Text);
-            command.Parameters.AddWithValue("@phonenumber", phoneNumber.Text);
-            command.ExecuteNonQuery();
+            using(SqlConnection connection = new SqlConnection(connectionString)) {
+                connection.Open();
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Parameters.AddWithValue("@firstname", firstName.Text);
+                command.Parameters.AddWithValue("@lastname", lastName.Text);
+                command.Parameters.AddWithValue("@phonenumber", phoneNumber.Text);
+                command.ExecuteNonQuery();
+            }
         }
     }
 }
